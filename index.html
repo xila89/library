@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script src="./script.js"></script>
+      <link rel="stylesheet" type="text/css" href="./stylesheet.css">
+      <title>Library App</title>
+   </head>
+   <body>
+      <div class="wrapper">
+         <div class="header">
+            <div class="bookwrapper">
+               <div class="books" id="books-read">Books Read: 0</div>
+               <div class="books" id="books-unread">Books Unread: 0</div>
+               <div class="books" id="total-books">Total Books: 0</div>
+            </div>
+         </div>
+         <div class="main">
+            <div class="blockquote">
+               <blockquote>
+                  A reader lives a thousand lives before he dies . . . The man who never reads lives only one.
+               </blockquote>
+               <cite>--George R.R. Martin</cite>
+            </div>
+            <p>What will you read next?</p>
+            <table>
+               <thead>
+                  <tr>
+                     <th>Title</th>
+                     <th>Author</th>
+                     <th>Pages</th>
+                     <th>Status</th>
+                     <th>Rating</th>
+                     <th></th>
+                     <th></th>
+                     <th></th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <td id="titledata"></td>
+                  <td id="authordata"></td>
+                  <td id="pagesdata"></td>
+                  <td id="statusdata"></td>
+                  <td id="ratingdata"></td>
+                  <td><button>Change Status</button></td>
+                  <td><button>Edit</button></td>
+                  <td><button>Delete</button></td>
+               </tbody>
+            </table>
+         </div>
+         <aside class="lsidebar">
+         <div class="libraryhead">
+            <img src="./icons/bookcase.svg">
+            <h1>Library</h1>
+         </div>
+         <form>
+            <label for="bookname">What is the title of the book?</label>
+            <input type="text" id="bookname" name="bookname">
+            <label for="author">Who wrote the book?</label>
+            <input type="text" id="bookauthor" name="bookauthor">
+            <label for="pages">How many pages are in the book?</label>
+            <input type="text" id="pages" name="pages">
+            <label for="rating">How would you rate the book?</label>
+            <input type="text" id="rating" name="rating">
+            <div class="readstatus">
+               <input type="checkbox" id="read" name="read">
+               <label for="read">Already read it? Tick the box!</label>
+            </div>
+            <button type="submit" id="submit">Submit</button>
+         </form>
+         <div class="explain">
+            <p>What's this?</p>
+         </div>
+         <footer>
+            <span>Created by <a href="www.github.com/xila89"> Xila </a> as part of <a href="www.theodinproject.com"> The Odin Project </a> Curriculum</span>
+         </footer>
+      </div>
+      </div>
+   </body>
+</html>
