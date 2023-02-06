@@ -74,6 +74,7 @@ bookForm.addEventListener('submit', (event) => {
           '<td>' + myLibrary[i].author + '</td>' +
           '<td>' + myLibrary[i].pages + '</td>' +
           '<td><button class="changeStatus">' + (myLibrary[i].status ? 'read' : 'unread') + '</button></td>' +
+            '<td><button class="remove" onclick="removeBook(this)">remove</button></td>' + '</tr>';
         '</tr>';
     }
     
@@ -90,6 +91,12 @@ bookForm.addEventListener('submit', (event) => {
     }
     countBooks();
   });
+
+  function removeBook(node) { //remove book//
+    r=node.parentNode.parentNode; 
+    r.parentNode.removeChild(r); 
+    countBooks();
+}
 
   displayBooks(); 
   countBooks();
