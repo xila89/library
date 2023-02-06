@@ -106,6 +106,14 @@ p{
     margin: 10px;
 }
 
+.explain {
+    display: flex;
+}
+
+.explain img {
+    width: 25px;
+}
+
 /*book input form styling*/
 
 input {
@@ -166,7 +174,7 @@ table, tbody, td {
 }
 
 table tr:nth-child(even) {
-    background-color: #9EF2F5;
+    background-color: #0440428a;
 }
 table thead th {
     justify-content: center;
